@@ -1,0 +1,9 @@
+/* MamaVillage - Tailwind CSS */
+@import "tailwindcss";
+
+/* Custom PolySans fallback */
+@layer base {
+  .font-polysans {
+    font-family: 'PolySans', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}

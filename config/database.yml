@@ -1,0 +1,41 @@
+# SQLite3 - Configuration temporaire pour le frontend
+# On passera à PostgreSQL plus tard pour le backend
+
+default: &default
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: storage/development.sqlite3
+
+test:
+  <<: *default
+  database: storage/test.sqlite3
+
+production:
+  <<: *default
+  database: storage/production.sqlite3
+
+# PostgreSQL configuration (à utiliser plus tard)
+# Décommente ces lignes et commente la config SQLite quand tu seras prêt
+#
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#
+# development:
+#   <<: *default
+#   database: mama_village_development
+#
+# test:
+#   <<: *default
+#   database: mama_village_test
+#
+# production:
+#   <<: *default
+#   database: mama_village_production
+#   username: mama_village
+#   password: <%= ENV["MAMA_VILLAGE_DATABASE_PASSWORD"] %>

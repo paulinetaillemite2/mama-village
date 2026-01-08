@@ -53,3 +53,9 @@ yarn-error.log
 # Ignore master key for decrypting credentials
 /config/master.key
 
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+# Personal notes
+HOW_IT_WORKS.md

@@ -1,0 +1,465 @@
+.min-h-screen.bg-background
+  %nav.bg-background-light.shadow-header.sticky.top-0.z-sticky
+    .max-w-7xl.mx-auto.px-lg.py-md.flex.items-center.justify-between
+      %h1.font-playfair.text-h3-playfair-desktop.text-deep-mocha MamaVillage Design System
+      .flex.gap-md
+        %a.text-body-standard-desktop.font-polysans.text-deep-mocha-70.hover:text-primary.transition-base{href: "#colors"} Couleurs
+        %a.text-body-standard-desktop.font-polysans.text-deep-mocha-70.hover:text-primary.transition-base{href: "#typography"} Typographie
+        %a.text-body-standard-desktop.font-polysans.text-deep-mocha-70.hover:text-primary.transition-base{href: "#buttons"} Boutons
+        %a.text-body-standard-desktop.font-polysans.text-deep-mocha-70.hover:text-primary.transition-base{href: "#spacing"} Espacements
+
+  .max-w-7xl.mx-auto.px-lg.py-section-desktop
+
+    / Hero
+    %section.mb-3xl
+      %h1.font-playfair.text-h1-playfair-desktop.text-deep-mocha.mb-md MamaVillage Design System
+      %p.font-polysans.text-body-large-desktop.text-deep-mocha-70
+        Tous les composants, couleurs et typographies pour construire la nouvelle application MamaVillage.
+        Cette page te permettra de visualiser et tester tous les éléments de ton design system.
+
+    / Section 1: Couleurs
+    %section#colors.mb-3xl
+      %h2.font-playfair.text-h2-playfair-desktop.text-deep-mocha.mb-xl Couleurs
+      
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Palette principale
+        .grid.grid-cols-2.md:grid-cols-3.lg:grid-cols-5.gap-lg
+          .text-center
+            .w-full.h-32.rounded-lg.bg-blush.shadow-card.mb-sm
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold Blush
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #F2AAE2
+
+          .text-center
+            .w-full.h-32.rounded-lg.bg-lime-cream.shadow-card.mb-sm
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold Lime Cream
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #DFFFA5
+
+          .text-center
+            .w-full.h-32.rounded-lg.bg-sky-reflection.shadow-card.mb-sm
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold Sky Reflection
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #6FB0D0
+
+          .text-center
+            .w-full.h-32.rounded-lg.bg-deep-mocha.shadow-card.mb-sm
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold Deep Mocha
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #403633
+
+          .text-center
+            .w-full.h-32.rounded-lg.bg-tea-green.shadow-card.mb-sm
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold Tea Green
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #C9FED3
+
+          .text-center
+            .w-full.h-32.rounded-lg.bg-tan.shadow-card.mb-sm
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold Tan
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #D0B993
+
+          .text-center
+            .w-full.h-32.rounded-lg.bg-crimson-carrot.shadow-card.mb-sm
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold Crimson Carrot
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #FA4B02
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Couleurs sémantiques
+        .grid.grid-cols-2.md:grid-cols-4.gap-lg
+          .text-center
+            .w-full.h-24.rounded-lg.bg-primary.shadow-card.mb-sm.flex.items-center.justify-center
+              %span.text-background-light.font-polysans.text-body-standard-desktop.font-bold Primary
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #6FB0D0
+
+          .text-center
+            .w-full.h-24.rounded-lg.bg-secondary.shadow-card.mb-sm.flex.items-center.justify-center
+              %span.text-background-light.font-polysans.text-body-standard-desktop.font-bold Secondary
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #FA4B02
+
+          .text-center
+            .w-full.h-24.rounded-lg.bg-success.shadow-card.mb-sm.flex.items-center.justify-center
+              %span.text-background-light.font-polysans.text-body-standard-desktop.font-bold Success
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #00B67A
+
+          .text-center
+            .w-full.h-24.rounded-lg.bg-error.shadow-card.mb-sm.flex.items-center.justify-center
+              %span.text-background-light.font-polysans.text-body-standard-desktop.font-bold Error
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 #DC2626
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Variantes d'opacité
+        .bg-background-light.p-xl.rounded-xl.shadow-card
+          / Blush
+          %h4.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold.mb-md Blush
+          .grid.grid-cols-2.md:grid-cols-5.gap-lg.mb-xl
+            .text-center
+              .w-full.h-20.rounded-lg.bg-blush-10.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 10%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(242,170,226,0.1)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-blush-20.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 20%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(242,170,226,0.2)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-blush-41.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 41%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(242,170,226,0.41)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-blush-50.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 50%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(242,170,226,0.5)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-blush.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 100%
+              %code.font-polysans.text-caption.text-deep-mocha-60 #F2AAE2
+
+          / Lime Cream
+          %h4.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold.mb-md.mt-xl Lime Cream
+          .grid.grid-cols-2.md:grid-cols-5.gap-lg.mb-xl
+            .text-center
+              .w-full.h-20.rounded-lg.bg-lime-cream-10.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 10%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(223,255,165,0.1)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-lime-cream-20.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 20%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(223,255,165,0.2)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-lime-cream-41.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 41%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(223,255,165,0.41)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-lime-cream-50.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 50%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(223,255,165,0.5)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-lime-cream.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 100%
+              %code.font-polysans.text-caption.text-deep-mocha-60 #DFFFA5
+
+          / Sky Reflection
+          %h4.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold.mb-md.mt-xl Sky Reflection
+          .grid.grid-cols-2.md:grid-cols-5.gap-lg.mb-xl
+            .text-center
+              .w-full.h-20.rounded-lg.bg-sky-reflection-10.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 10%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(111,176,208,0.1)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-sky-reflection-20.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 20%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(111,176,208,0.2)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-sky-reflection-41.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 41%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(111,176,208,0.41)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-sky-reflection-50.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 50%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(111,176,208,0.5)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-sky-reflection.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 100%
+              %code.font-polysans.text-caption.text-deep-mocha-60 #6FB0D0
+
+          / Deep Mocha
+          %h4.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold.mb-md.mt-xl Deep Mocha
+          .grid.grid-cols-2.md:grid-cols-4.gap-lg.mb-xl
+            .text-center
+              .w-full.h-20.rounded-lg.bg-deep-mocha-60.shadow-card.mb-sm.flex.items-center.justify-center
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha.mt-sm 60%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(64,54,51,0.6)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-deep-mocha-70.shadow-card.mb-sm.flex.items-center.justify-center
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha.mt-sm 70%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(64,54,51,0.7)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-deep-mocha-100.shadow-card.mb-sm.flex.items-center.justify-center
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha.mt-sm 100%
+              %code.font-polysans.text-caption.text-deep-mocha-60 #403633
+            .text-center
+              .w-full.h-20.rounded-lg.bg-deep-mocha.shadow-card.mb-sm.flex.items-center.justify-center
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha.mt-sm Deep Mocha
+              %code.font-polysans.text-caption.text-deep-mocha-60 #403633
+
+          / Tea Green
+          %h4.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold.mb-md.mt-xl Tea Green
+          .grid.grid-cols-2.md:grid-cols-5.gap-lg.mb-xl
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tea-green-10.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 10%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(201,254,211,0.1)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tea-green-20.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 20%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(201,254,211,0.2)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tea-green-41.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 41%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(201,254,211,0.41)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tea-green-50.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 50%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(201,254,211,0.5)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tea-green.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 100%
+              %code.font-polysans.text-caption.text-deep-mocha-60 #C9FED3
+
+          / Tan
+          %h4.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold.mb-md.mt-xl Tan
+          .grid.grid-cols-2.md:grid-cols-5.gap-lg.mb-xl
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tan-10.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 10%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(208,185,147,0.1)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tan-20.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 20%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(208,185,147,0.2)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tan-41.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 41%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(208,185,147,0.41)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tan-50.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 50%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(208,185,147,0.5)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-tan.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha 100%
+              %code.font-polysans.text-caption.text-deep-mocha-60 #D0B993
+
+          / Crimson Carrot
+          %h4.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold.mb-md.mt-xl Crimson Carrot
+          .grid.grid-cols-2.md:grid-cols-5.gap-lg
+            .text-center
+              .w-full.h-20.rounded-lg.bg-crimson-carrot-10.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha.mt-sm 10%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(250,75,2,0.1)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-crimson-carrot-20.shadow-card.mb-sm.border.border-gray-300
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha.mt-sm 20%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(250,75,2,0.2)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-crimson-carrot-41.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha.mt-sm 41%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(250,75,2,0.41)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-crimson-carrot-50.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha.mt-sm 50%
+              %code.font-polysans.text-caption.text-deep-mocha-60 rgba(250,75,2,0.5)
+            .text-center
+              .w-full.h-20.rounded-lg.bg-crimson-carrot.shadow-card.mb-sm
+              %p.font-polysans.text-body-small-desktop.text-deep-mocha.mt-sm 100%
+              %code.font-polysans.text-caption.text-deep-mocha-60 #FA4B02
+
+    / Section 2: Typographie
+    %section#typography.mb-3xl
+      %h2.font-playfair.text-h2-playfair-desktop.text-deep-mocha.mb-xl Typographie
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Headings - Playfair Display
+        .space-y-lg.bg-background-light.p-xl.rounded-xl.shadow-card
+          .border-b.border-deep-mocha-60.pb-md
+            %h1.font-playfair.text-h1-playfair-desktop.text-deep-mocha Heading 1 Playfair
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 48px / Medium / LH 1.2
+
+          .border-b.border-deep-mocha-60.pb-md
+            %h2.font-playfair.text-h2-playfair-desktop.text-deep-mocha Heading 2 Playfair
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 32px / Medium / LH 1.3
+
+          .border-b.border-deep-mocha-60.pb-md
+            %h3.font-playfair.text-h3-playfair-desktop.text-deep-mocha Heading 3 Playfair
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 24px / Medium / LH 1.4
+
+          .border-b.border-deep-mocha-60.pb-md
+            %h3.font-playfair.text-h3-playfair-semibold-desktop.text-deep-mocha Heading 3 Playfair SemiBold
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 24px / SemiBold / LH 1.4
+
+          %div
+            %h4.font-playfair.text-h4-playfair-desktop.text-deep-mocha Heading 4 Playfair
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 18px / Medium / LH 1.4
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Headings - PolySans Qonto
+        .space-y-lg.bg-background-light.p-xl.rounded-xl.shadow-card
+          .border-b.border-deep-mocha-60.pb-md
+            %h1.font-polysans.text-h1-polysans-desktop.text-deep-mocha Heading 1 PolySans
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 48px / Bold / LH 1.2
+
+          .border-b.border-deep-mocha-60.pb-md
+            %h2.font-polysans.text-h2-polysans-desktop.text-deep-mocha Heading 2 PolySans
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 32px / Bold / LH 1.3
+
+          .border-b.border-deep-mocha-60.pb-md
+            %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha Heading 3 PolySans
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 24px / Bold / LH 1.4
+
+          .border-b.border-deep-mocha-60.pb-md
+            %h3.font-polysans.text-h3-polysans-bulky-desktop.text-deep-mocha Heading 3 PolySans Bulky
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 24px / Bulky (800) / LH 1.4
+
+          %div
+            %h4.font-polysans.text-h4-polysans-desktop.text-deep-mocha Heading 4 PolySans
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 18px / Bold / LH 1.4
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Body Text - Playfair
+        .space-y-md.bg-background-light.p-xl.rounded-xl.shadow-card
+          %div
+            %p.font-playfair.text-body-xl-desktop.text-deep-mocha Body XL Playfair — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 20px / Regular / LH 1.5
+
+          %div
+            %p.font-playfair.text-body-large-desktop.text-deep-mocha Body Large Playfair — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 18px / Regular / LH 1.5
+
+          %div
+            %p.font-playfair.text-body-standard-desktop.text-deep-mocha Body Standard Playfair — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 16px / Regular / LH 1.5
+
+          %div
+            %p.font-playfair.text-body-standard-desktop.text-deep-mocha.font-bold Body Bold Playfair — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 16px / Bold / LH 1.5
+
+          %div
+            %p.font-playfair.text-body-standard-desktop.text-deep-mocha.font-light Body Slim Playfair — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 16px / Light / LH 1.5
+
+          %div
+            %p.font-playfair.text-body-standard-desktop.text-deep-mocha.font-light.italic Body Slim Italic Playfair — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 16px / Light Italic / LH 1.5
+
+          %div
+            %p.font-playfair.text-body-small-desktop.text-deep-mocha-70 Body Small Playfair — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 14px / Regular / LH 1.4
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Body Text - PolySans
+        .space-y-md.bg-background-light.p-xl.rounded-xl.shadow-card
+          %div
+            %p.font-polysans.text-body-xl-desktop.text-deep-mocha Body XL PolySans — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 20px / Regular / LH 1.5
+
+          %div
+            %p.font-polysans.text-body-large-desktop.text-deep-mocha Body Large PolySans — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 18px / Regular / LH 1.5
+
+          %div
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha Body Standard PolySans — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 16px / Regular / LH 1.5
+
+          %div
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha.font-bold Body Bold PolySans — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 16px / Bold / LH 1.5
+
+          %div
+            %p.font-polysans.text-body-standard-desktop.text-deep-mocha.font-light Body Slim PolySans — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 16px / Light / LH 1.5
+
+          %div
+            %p.font-polysans.text-body-small-desktop.text-deep-mocha-70 Body Small PolySans — Lorem ipsum dolor sit amet
+            %code.font-polysans.text-body-small-desktop.text-deep-mocha-60 14px / Regular / LH 1.4
+
+    / Section 3: Boutons
+    %section#buttons.mb-3xl
+      %h2.font-playfair.text-h2-playfair-desktop.text-deep-mocha.mb-xl Boutons
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Boutons primaires
+        .flex.flex-wrap.gap-lg.items-center
+          %button.font-polysans.text-button-large-desktop.bg-primary.text-background-light.px-10.py-5.rounded-full.shadow-card.hover:shadow-button-hover.transition-base.hover:scale-105
+            Bouton Large Primary
+          %button.font-polysans.text-button-small-desktop.bg-primary.text-background-light.px-8.py-3.rounded-full.shadow-card.hover:shadow-button-hover.transition-base.hover:scale-105
+            Bouton Small Primary
+          %button.font-polysans.text-button-small-desktop.bg-primary.text-background-light.px-8.py-3.rounded-full.shadow-card.opacity-50.cursor-not-allowed
+            Bouton Disabled
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Boutons secondaires
+        .flex.flex-wrap.gap-lg.items-center
+          %button.font-polysans.text-button-large-desktop.bg-secondary.text-background-light.px-10.py-5.rounded-full.shadow-card.hover:shadow-button-hover.transition-base.hover:scale-105
+            Bouton Large Secondary
+          %button.font-polysans.text-button-small-desktop.bg-secondary.text-background-light.px-8.py-3.rounded-full.shadow-card.hover:shadow-button-hover.transition-base.hover:scale-105
+            Bouton Small Secondary
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Boutons outline
+        .flex.flex-wrap.gap-lg.items-center
+          %button.font-polysans.text-button-large-desktop.border-2.border-primary.text-primary.px-10.py-5.rounded-full.hover:bg-primary.hover:text-background-light.transition-base
+            Bouton Large Outline
+          %button.font-polysans.text-button-small-desktop.border-2.border-primary.text-primary.px-8.py-3.rounded-full.hover:bg-primary.hover:text-background-light.transition-base
+            Bouton Small Outline
+
+    / Section 4: Espacements & Radius
+    %section#spacing.mb-3xl
+      %h2.font-playfair.text-h2-playfair-desktop.text-deep-mocha.mb-xl Espacements & Radius
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Espacements
+        .space-y-md
+          .flex.items-center.gap-lg
+            .w-32.font-polysans.text-body-standard-desktop.text-deep-mocha XS (4px)
+            .h-8.bg-sky-reflection{style: "width: 4px;"}
+          .flex.items-center.gap-lg
+            .w-32.font-polysans.text-body-standard-desktop.text-deep-mocha SM (8px)
+            .h-8.bg-sky-reflection{style: "width: 8px;"}
+          .flex.items-center.gap-lg
+            .w-32.font-polysans.text-body-standard-desktop.text-deep-mocha MD (16px)
+            .h-8.bg-sky-reflection{style: "width: 16px;"}
+          .flex.items-center.gap-lg
+            .w-32.font-polysans.text-body-standard-desktop.text-deep-mocha LG (24px)
+            .h-8.bg-sky-reflection{style: "width: 24px;"}
+          .flex.items-center.gap-lg
+            .w-32.font-polysans.text-body-standard-desktop.text-deep-mocha XL (32px)
+            .h-8.bg-sky-reflection{style: "width: 32px;"}
+          .flex.items-center.gap-lg
+            .w-32.font-polysans.text-body-standard-desktop.text-deep-mocha 2XL (48px)
+            .h-8.bg-sky-reflection{style: "width: 48px;"}
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Border Radius
+        .flex.flex-wrap.gap-lg
+          .text-center
+            .w-24.h-24.bg-blush.rounded-sm.shadow-card.mb-sm
+            %p.font-polysans.text-body-small-desktop.text-deep-mocha SM (4px)
+          .text-center
+            .w-24.h-24.bg-lime-cream.rounded-md.shadow-card.mb-sm
+            %p.font-polysans.text-body-small-desktop.text-deep-mocha MD (8px)
+          .text-center
+            .w-24.h-24.bg-sky-reflection.rounded-lg.shadow-card.mb-sm
+            %p.font-polysans.text-body-small-desktop.text-deep-mocha LG (12px)
+          .text-center
+            .w-24.h-24.bg-tea-green.rounded-xl.shadow-card.mb-sm
+            %p.font-polysans.text-body-small-desktop.text-deep-mocha XL (20px)
+          .text-center
+            .w-24.h-24.bg-tan.rounded-2xl.shadow-card.mb-sm
+            %p.font-polysans.text-body-small-desktop.text-deep-mocha 2XL (25px)
+          .text-center
+            .w-24.h-24.bg-crimson-carrot.rounded-full.shadow-card.mb-sm
+            %p.font-polysans.text-body-small-desktop.text-deep-mocha FULL
+
+    / Section 5: Shadows
+    %section#shadows.mb-3xl
+      %h2.font-playfair.text-h2-playfair-desktop.text-deep-mocha.mb-xl Ombres
+      .grid.grid-cols-2.md:grid-cols-3.gap-lg
+        .text-center
+          .w-full.h-32.bg-background-light.rounded-lg.shadow-sm.mb-sm.flex.items-center.justify-center
+            %span.font-polysans.text-body-standard-desktop.text-deep-mocha Shadow SM
+        .text-center
+          .w-full.h-32.bg-background-light.rounded-lg.shadow-md.mb-sm.flex.items-center.justify-center
+            %span.font-polysans.text-body-standard-desktop.text-deep-mocha Shadow MD
+        .text-center
+          .w-full.h-32.bg-background-light.rounded-lg.shadow-lg.mb-sm.flex.items-center.justify-center
+            %span.font-polysans.text-body-standard-desktop.text-deep-mocha Shadow LG
+        .text-center
+          .w-full.h-32.bg-background-light.rounded-lg.shadow-xl.mb-sm.flex.items-center.justify-center
+            %span.font-polysans.text-body-standard-desktop.text-deep-mocha Shadow XL
+        .text-center
+          .w-full.h-32.bg-background-light.rounded-lg.shadow-card.mb-sm.flex.items-center.justify-center
+            %span.font-polysans.text-body-standard-desktop.text-deep-mocha Card Shadow
+        .text-center
+          .w-full.h-32.bg-background-light.rounded-lg.shadow-button-hover.mb-sm.flex.items-center.justify-center
+            %span.font-polysans.text-body-standard-desktop.text-deep-mocha Button Hover
+
+  / Footer
+  %footer.bg-deep-mocha.text-background-light.py-xl.mt-3xl
+    .max-w-7xl.mx-auto.px-lg.text-center
+      %p.font-polysans.text-body-standard-desktop MamaVillage Design System — 2026
+      %p.font-polysans.text-body-small-desktop.mt-sm Built with Rails 7.2 + Tailwind CSS v4 + HAML

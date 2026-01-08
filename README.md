@@ -21,52 +21,98 @@ MamaVillage, c'est :
 
 ---
 
-## 📋 Documentation
+## 📁 Structure du projet
 
-### Phase de conception
-- [Pitch & Fonctionnalités](./MamaVillage_Pitch.md)
-- [Fonctionnalités MVP (RNCP 6) vs RNCP 7](./Fonctionnalites.md)
-- [Personas](./Personas.md)
-- [User Journey](./User_Journey.md)
-- [Wireframe Homepage](./Wireframe_Homepage.md)
-
-### Design System
-- [Design Tokens](./Design_Tokens.md)
-- [Design Tokens (JSON)](./design_tokens.json)
-- [Inventaire des Composants](./Inventaire_Composants.md)
+```
+mama_village/
+├── docs/                          # 📚 Documentation
+│   ├── MamaVillage_Pitch.md      # Pitch et fonctionnalités
+│   ├── Fonctionnalites.md        # MVP vs RNCP 7
+│   ├── Personas.md               # Emma, Léa, Sarah
+│   ├── User_Journey.md           # Parcours utilisateurs
+│   ├── Wireframe_Homepage.md     # Wireframe
+│   ├── Design_Tokens.md          # Design system (MD)
+│   ├── design_tokens.json        # Design system (JSON)
+│   └── Inventaire_Composants.md  # Liste des composants
+├── app/                          # 🚀 Application Rails
+├── config/                       # Configuration
+├── db/                           # Base de données
+└── README.md                     # Ce fichier
+```
 
 ---
 
-## 🎨 Stack Technique
+## 🛠️ Stack Technique
 
 ### Backend
-- **Ruby on Rails** (full-stack framework)
-- **PostgreSQL** + **PostGIS** (base de données + géolocalisation)
-- **ActionCable** (messagerie temps réel)
+- **Ruby** 3.3.6
+- **Rails** 7.2.2
+- **PostgreSQL** (base de données + PostGIS pour géolocalisation)
 
 ### Frontend
 - **HAML** (templating)
-- **Tailwind CSS** (styling)
+- **Tailwind CSS v4** (styling)
 - **Hotwire/Turbo/Stimulus** (interactivité)
 
 ### Design
 - **Figma** (maquettes et design system)
-- Typographies : **Playfair Display** (headings) + **PolySans Qonto** (body)
+- Typographies : **Playfair Display** + **PolySans Qonto**
 - Palette : Sky Reflection, Lime Cream, Deep Mocha, etc.
 
 ---
 
-## 🚀 Roadmap
+## 🚀 Installation
 
-### ✅ Phase 1 : Conception (en cours)
+### Prérequis
+- Ruby 3.3.6
+- PostgreSQL (à installer)
+- Node.js 24+
+
+### Installation
+
+```bash
+# 1. Cloner le repo
+git clone https://github.com/paulinetaillemite2/mama-village.git
+cd mama_village
+
+# 2. Installer les dépendances
+bundle install
+
+# 3. Installer PostgreSQL (si pas encore fait)
+brew install postgresql@16
+brew services start postgresql@16
+
+# 4. Créer les bases de données
+rails db:create
+
+# 5. Lancer le serveur
+bin/dev
+```
+
+L'application sera accessible sur `http://localhost:3000`
+
+---
+
+## 📚 Documentation
+
+Toute la documentation du projet est dans le dossier `/docs` :
+- **Conception** : Pitch, Personas, User Journey, Wireframes
+- **Design System** : Design Tokens, Inventaire des Composants
+
+---
+
+## 🎯 Roadmap
+
+### ✅ Phase 1 : Conception (complétée)
 - [x] Pitch et définition du projet
-- [x] Personas et user journey
+- [x] Personas et user journey  
 - [x] Wireframes
 - [x] Design system et tokens
-- [ ] Maquettes haute fidélité
+- [x] Setup Rails + Tailwind + HAML
 
-### 🔄 Phase 2 : MVP (RNCP 6)
-- [ ] Setup projet Rails + Tailwind
+### 🔄 Phase 2 : MVP (RNCP 6) - en cours
+- [ ] Configurer Tailwind avec Design Tokens
+- [ ] Créer la page Design System
 - [ ] Authentification (Devise)
 - [ ] Profils utilisateurs
 - [ ] Géolocalisation et recherche
