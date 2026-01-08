@@ -6,6 +6,7 @@
         %a.text-body-standard-desktop.font-polysans.text-deep-mocha-70.hover:text-primary.transition-base{href: "#colors"} Couleurs
         %a.text-body-standard-desktop.font-polysans.text-deep-mocha-70.hover:text-primary.transition-base{href: "#typography"} Typographie
         %a.text-body-standard-desktop.font-polysans.text-deep-mocha-70.hover:text-primary.transition-base{href: "#buttons"} Boutons
+        %a.text-body-standard-desktop.font-polysans.text-deep-mocha-70.hover:text-primary.transition-base{href: "#testimonials"} Témoignages
         %a.text-body-standard-desktop.font-polysans.text-deep-mocha-70.hover:text-primary.transition-base{href: "#spacing"} Espacements
 
   .max-w-7xl.mx-auto.px-lg.py-section-desktop
@@ -387,7 +388,78 @@
           %button.font-polysans.text-button-small-desktop.border-2.border-primary.text-primary.px-8.py-3.rounded-full.hover:bg-primary.hover:text-background-light.transition-base
             Bouton Small Outline
 
-    / Section 4: Espacements & Radius
+    / Section 4: Cartes de témoignages
+    %section#testimonials.mb-3xl
+      %h2.font-playfair.text-h2-playfair-desktop.text-deep-mocha.mb-xl Cartes de témoignages
+
+      .mb-2xl
+        %h3.font-polysans.text-h3-polysans-desktop.text-deep-mocha.mb-lg Variantes
+        .grid.grid-cols-1.md:grid-cols-2.gap-xl
+          / Variante Crimson Carrot
+          .relative.w-85.h-80.bg-background-light.border.border-crimson-carrot.p-6.flex.flex-col
+            / Auteur
+            %h4.font-playfair.text-crimson-carrot.mb-3{style: "font-size: 20px; line-height: 1.2; font-weight: 600;"}
+              Pauline - Maman de 2 enfants - Paris
+            / Étoiles
+            .flex.gap-1.mb-4
+              - 5.times do
+                %svg.w-5.h-5.fill-crimson-carrot{viewBox: "0 0 20 20", xmlns: "http://www.w3.org/2000/svg"}
+                  %path{d: "M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"}
+            / Ligne décorative
+            .w-full.h-px.bg-crimson-carrot.mb-4
+            / Texte témoignage
+            %p.font-polysans.text-body-small-desktop.text-crimson-carrot.leading-relaxed.flex-1{style: "font-weight: 300;"}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in metus a arcu fermentum vehicula. Donec faucibus odio sed aliquam rhoncus. Suspendisse feugiat facilisis felis in ultrices. Etiam quis nunc vehicula, congue quam sed, blandit enim. Morbi laoreet tellus ornare nisi ornare volutpat.
+
+          / Variante Sky Reflection
+          .relative.w-85.h-80.bg-background-light.border.border-sky-reflection.p-6.flex.flex-col
+            / Auteur
+            %h4.font-playfair.text-sky-reflection.mb-3{style: "font-size: 20px; line-height: 1.2; font-weight: 600;"}
+              Pauline - Maman de 2 enfants - Paris
+            / Étoiles
+            .flex.gap-1.mb-4
+              - 5.times do
+                %svg.w-5.h-5.fill-sky-reflection{viewBox: "0 0 20 20", xmlns: "http://www.w3.org/2000/svg"}
+                  %path{d: "M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"}
+            / Ligne décorative
+            .w-full.h-px.bg-sky-reflection.mb-4
+            / Texte témoignage
+            %p.font-polysans.text-body-small-desktop.text-sky-reflection.leading-relaxed.flex-1{style: "font-weight: 300;"}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in metus a arcu fermentum vehicula. Donec faucibus odio sed aliquam rhoncus. Suspendisse feugiat facilisis felis in ultrices. Etiam quis nunc vehicula, congue quam sed, blandit enim. Morbi laoreet tellus ornare nisi ornare volutpat.
+
+          / Variante Deep Mocha
+          .relative.w-85.h-80.bg-background-light.border.border-deep-mocha.p-6.flex.flex-col
+            / Auteur
+            %h4.font-playfair.text-deep-mocha.mb-3{style: "font-size: 20px; line-height: 1.2; font-weight: 600;"}
+              Pauline - Maman de 2 enfants - Paris
+            / Étoiles
+            .flex.gap-1.mb-4
+              - 5.times do
+                %svg.w-5.h-5.fill-deep-mocha{viewBox: "0 0 20 20", xmlns: "http://www.w3.org/2000/svg"}
+                  %path{d: "M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"}
+            / Ligne décorative
+            .w-full.h-px.bg-deep-mocha.mb-4
+            / Texte témoignage
+            %p.font-polysans.text-body-small-desktop.text-deep-mocha.leading-relaxed.flex-1{style: "font-weight: 300;"}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in metus a arcu fermentum vehicula. Donec faucibus odio sed aliquam rhoncus. Suspendisse feugiat facilisis felis in ultrices. Etiam quis nunc vehicula, congue quam sed, blandit enim. Morbi laoreet tellus ornare nisi ornare volutpat.
+
+          / Variante Dark Mode (Blush)
+          .relative.w-85.h-80.bg-deep-mocha.border.border-blush.p-6.flex.flex-col
+            / Auteur
+            %h4.font-playfair.text-blush.mb-3{style: "font-size: 20px; line-height: 1.2; font-weight: 600;"}
+              Pauline - Maman de 2 enfants - Paris
+            / Étoiles
+            .flex.gap-1.mb-4
+              - 5.times do
+                %svg.w-5.h-5.fill-blush{viewBox: "0 0 20 20", xmlns: "http://www.w3.org/2000/svg"}
+                  %path{d: "M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"}
+            / Ligne décorative
+            .w-full.h-px.bg-blush.mb-4
+            / Texte témoignage
+            %p.font-polysans.text-body-small-desktop.text-blush.leading-relaxed.flex-1{style: "font-weight: 300;"}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in metus a arcu fermentum vehicula. Donec faucibus odio sed aliquam rhoncus. Suspendisse feugiat facilisis felis in ultrices. Etiam quis nunc vehicula, congue quam sed, blandit enim. Morbi laoreet tellus ornare nisi ornare volutpat.
+
+    / Section 5: Espacements & Radius
     %section#spacing.mb-3xl
       %h2.font-playfair.text-h2-playfair-desktop.text-deep-mocha.mb-xl Espacements & Radius
 

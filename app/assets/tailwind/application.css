@@ -526,4 +526,15 @@
 @layer utilities {
   .z-sticky { z-index: 200; }
   .transition-base { transition: all 200ms ease; }
+  
+  /* SVG Fill colors */
+  .fill-blush { fill: #F2AAE2; }
+  .fill-lime-cream { fill: #DFFFA5; }
+  .fill-sky-reflection { fill: #6FB0D0; }
+  .fill-deep-mocha { fill: #403633; }
+  .fill-tea-green { fill: #C9FED3; }
+  .fill-tan { fill: #D0B993; }
+  .fill-crimson-carrot { fill: #FA4B02; }
+  .fill-primary { fill: #6FB0D0; }
+  .fill-secondary { fill: #FA4B02; }
 }
