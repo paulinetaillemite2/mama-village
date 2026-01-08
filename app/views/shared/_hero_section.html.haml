@@ -1,23 +1,23 @@
 / Hero Section
-%section.bg-lime-cream.py-section-desktop
+%section.bg-lime-cream.md:py-60.py-24
   .max-w-4xl.mx-auto.px-lg
     .flex.flex-col.items-center.text-center
-      / Titre principal
-      %h1.font-polysans.text-h1-polysans-mobile.md:text-h1-polysans-desktop.text-deep-mocha.mb-6
-        Ton 
-        %span.font-playfair.italic.font-weight-thin village
-        %span  de parents autour de toi
+      / Conteneur titre et sous-titre
+      .mb-8
+        / Titre principal
+        %h1.font-polysans.text-h1-polysans-mobile.md:text-h1-polysans-desktop.text-black.mb-6
+          Ton 
+          %span.font-playfair.italic.font-weight-thin village
+          %span  de parents autour de toi
+        
+        / Sous-titre
+        %p.font-playfair.text-h2-playfair-mobile.md:text-h2-playfair-desktop.text-black
+          Connectes toi avec des parents de ton quartier, trouve des professionnels 
+          %span.font-polysans{style: "font-weight: 800;"} bienveillants
+          %span  et découvre ton réseau d'entraide locale.
       
-      / Sous-titre
-      %p.font-playfair.text-h2-playfair-mobile.md:text-h2-playfair-desktop.text-deep-mocha.mb-8
-        Connectes toi avec des parents de ton quartier, trouve des professionnels 
-        %span.font-polysans{style: "font-weight: 800;"} bienveillants
-        %span  et découvre ton réseau d'entraide locale.
-    
       / Bouton CTA
-      %a.bg-deep-mocha.text-background-light.px-10.py-5.rounded-full.shadow-card.hover:shadow-button-hover.transition-base.hover:scale-105.inline-flex.items-center.gap-2.font-polysans.text-button-small-mobile.md:text-button-small-desktop{href: "#"}
+      %a.bg-black.text-background-light.px-10.py-3.rounded-full.hover:shadow-button-hover.transition-base.hover:scale-105.inline-flex.items-center.gap-2.font-polysans.text-button-small-mobile.md:text-button-small-desktop{href: "#"}
         Découvrir mamaVillage
         %svg.w-4.h-4.fill-background-light{viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg"}
           %path{d: "M8 0L6.59 1.41L12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8z"}
-      
-

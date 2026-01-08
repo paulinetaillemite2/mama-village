@@ -137,15 +137,16 @@
 }
 
 @utility text-h2-playfair-mobile {
-  font-size: 24px;
-  line-height: 1.3;
-  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 300 !important;
+  font-style: normal;
 }
 
 @utility text-h2-playfair-desktop {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.3;
-  font-weight: 500;
+  font-weight: 300 !important;
 }
 
 @utility text-h3-playfair-mobile {
@@ -307,13 +308,13 @@
 @utility text-button-small-mobile {
   font-size: 14px;
   line-height: 1.2;
-  font-weight: 800;
+  font-weight: 400 !important;
 }
 
 @utility text-button-small-desktop {
   font-size: 15px;
   line-height: 1.2;
-  font-weight: 800;
+  font-weight: 400 !important;
 }
 
 /* Color utilities - All classes use @utility for responsive breakpoints */
@@ -461,7 +462,6 @@
   /* Padding */
   .px-lg { padding-left: 24px; padding-right: 24px; }
   .py-md { padding-top: 16px; padding-bottom: 16px; }
-  .py-section-desktop { padding-top: 80px; padding-bottom: 80px; }
   .p-xl { padding: 32px; }
   .pb-md { padding-bottom: 16px; }
   
@@ -485,6 +485,10 @@
 @layer utilities {
   .z-sticky { z-index: 200; }
   .transition-base { transition: all 200ms ease; }
+  
+  /* Custom font-weights */
+  .font-weight-thin { font-weight: 100 !important; }
+  .font-weight-extralight { font-weight: 200 !important; }
   
   /* SVG Fill colors */
   .fill-blush { fill: #F2AAE2; }
