@@ -123,368 +123,327 @@
   }
 }
 
-/* Typography utilities */
-@layer utilities {
-  /* Headings Playfair */
-  .text-h1-playfair-desktop {
-    font-size: 48px;
-    line-height: 1.2;
-    font-weight: 500;
-  }
-  
-  .text-h1-playfair-mobile {
-    font-size: 32px;
-    line-height: 1.2;
-    font-weight: 500;
-  }
-  
-  .text-h2-playfair-desktop {
-    font-size: 32px;
-    line-height: 1.3;
-    font-weight: 500;
-  }
-  
-  .text-h2-playfair-mobile {
-    font-size: 24px;
-    line-height: 1.3;
-    font-weight: 500;
-  }
-  
-  .text-h3-playfair-desktop {
-    font-size: 24px;
-    line-height: 1.4;
-    font-weight: 500;
-  }
-  
-  .text-h3-playfair-mobile {
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 500;
-  }
-  
-  .text-h3-playfair-semibold-desktop {
-    font-size: 24px;
-    line-height: 1.4;
-    font-weight: 600;
-  }
-  
-  .text-h3-playfair-semibold-mobile {
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 600;
-  }
-  
-  .text-h4-playfair-desktop {
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 500;
-  }
-  
-  .text-h4-playfair-mobile {
-    font-size: 16px;
-    line-height: 1.4;
-    font-weight: 500;
-  }
-  
-  /* Headings PolySans */
-  .text-h1-polysans-desktop {
-    font-size: 48px;
-    line-height: 1.2;
-    font-weight: 700;
-  }
-  
-  .text-h1-polysans-mobile {
-    font-size: 32px;
-    line-height: 1.2;
-    font-weight: 700;
-  }
-  
-  .text-h2-polysans-desktop {
-    font-size: 32px;
-    line-height: 1.3;
-    font-weight: 700;
-  }
-  
-  .text-h2-polysans-mobile {
-    font-size: 24px;
-    line-height: 1.3;
-    font-weight: 700;
-  }
-  
-  .text-h3-polysans-desktop {
-    font-size: 24px;
-    line-height: 1.4;
-    font-weight: 700;
-  }
-  
-  .text-h3-polysans-mobile {
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 700;
-  }
-  
-  .text-h3-polysans-bulky-desktop {
-    font-size: 24px;
-    line-height: 1.4;
-    font-weight: 800;
-  }
-  
-  .text-h3-polysans-bulky-mobile {
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 800;
-  }
-  
-  .text-h4-polysans-desktop {
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 700;
-  }
-  
-  .text-h4-polysans-mobile {
-    font-size: 16px;
-    line-height: 1.4;
-    font-weight: 700;
-  }
-  
-  /* Body text */
-  .text-body-xl-desktop {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  
-  .text-body-xl-mobile {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  .text-body-large-desktop {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  .text-body-large-mobile {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .text-body-standard-desktop {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .text-body-standard-mobile {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  .text-body-small-desktop {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-  
-  .text-body-small-mobile {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-  
-  .text-caption {
-    font-size: 12px;
-    line-height: 1.3;
-  }
-  
-  /* Button text */
-  .text-button-large-desktop {
-    font-size: 24px;
-    line-height: 1.2;
-    font-weight: 800;
-  }
-  
-  .text-button-large-mobile {
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 800;
-  }
-  
-  .text-button-small-desktop {
-    font-size: 15px;
-    line-height: 1.2;
-    font-weight: 800;
-  }
-  
-  .text-button-small-mobile {
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 800;
-  }
+/* Typography utilities - Simple classes that work with md: breakpoints */
+@utility text-h1-playfair-mobile {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 500;
 }
 
-/* Color utilities */
-@layer utilities {
-  /* Background colors - Blush */
-  .bg-blush { background-color: #F2AAE2; }
-  .bg-blush-10 { background-color: rgb(242 170 226 / 0.1); }
-  .bg-blush-20 { background-color: rgb(242 170 226 / 0.2); }
-  .bg-blush-41 { background-color: rgb(242 170 226 / 0.41); }
-  .bg-blush-50 { background-color: rgb(242 170 226 / 0.5); }
-  
-  /* Background colors - Lime Cream */
-  .bg-lime-cream { background-color: #DFFFA5; }
-  .bg-lime-cream-10 { background-color: rgb(223 255 165 / 0.1); }
-  .bg-lime-cream-20 { background-color: rgb(223 255 165 / 0.2); }
-  .bg-lime-cream-41 { background-color: rgb(223 255 165 / 0.41); }
-  .bg-lime-cream-50 { background-color: rgb(223 255 165 / 0.5); }
-  
-  /* Background colors - Sky Reflection */
-  .bg-sky-reflection { background-color: #6FB0D0; }
-  .bg-sky-reflection-10 { background-color: rgb(111 176 208 / 0.1); }
-  .bg-sky-reflection-20 { background-color: rgb(111 176 208 / 0.2); }
-  .bg-sky-reflection-41 { background-color: rgb(111 176 208 / 0.41); }
-  .bg-sky-reflection-50 { background-color: rgb(111 176 208 / 0.5); }
-  
-  /* Background colors - Deep Mocha */
-  .bg-deep-mocha { background-color: #403633; }
-  .bg-deep-mocha-60 { background-color: rgb(64 54 51 / 0.6); }
-  .bg-deep-mocha-70 { background-color: rgb(64 54 51 / 0.7); }
-  .bg-deep-mocha-100 { background-color: #403633; }
-  
-  /* Background colors - Tea Green */
-  .bg-tea-green { background-color: #C9FED3; }
-  .bg-tea-green-10 { background-color: rgb(201 254 211 / 0.1); }
-  .bg-tea-green-20 { background-color: rgb(201 254 211 / 0.2); }
-  .bg-tea-green-41 { background-color: rgb(201 254 211 / 0.41); }
-  .bg-tea-green-50 { background-color: rgb(201 254 211 / 0.5); }
-  
-  /* Background colors - Tan */
-  .bg-tan { background-color: #D0B993; }
-  .bg-tan-10 { background-color: rgb(208 185 147 / 0.1); }
-  .bg-tan-20 { background-color: rgb(208 185 147 / 0.2); }
-  .bg-tan-41 { background-color: rgb(208 185 147 / 0.41); }
-  .bg-tan-50 { background-color: rgb(208 185 147 / 0.5); }
-  
-  /* Background colors - Crimson Carrot */
-  .bg-crimson-carrot { background-color: #FA4B02; }
-  .bg-crimson-carrot-10 { background-color: rgb(250 75 2 / 0.1); }
-  .bg-crimson-carrot-20 { background-color: rgb(250 75 2 / 0.2); }
-  .bg-crimson-carrot-41 { background-color: rgb(250 75 2 / 0.41); }
-  .bg-crimson-carrot-50 { background-color: rgb(250 75 2 / 0.5); }
-  .bg-primary { background-color: #6FB0D0; }
-  .bg-secondary { background-color: #FA4B02; }
-  .bg-background { background-color: #F3F0E8; }
-  .bg-background-light { background-color: #FFFFFF; }
-  .bg-success { background-color: #00B67A; }
-  .bg-error { background-color: #DC2626; }
-  .bg-warning { background-color: #F59E0B; }
-  
-  /* Text colors - Blush */
-  .text-blush { color: #F2AAE2; }
-  .text-blush-10 { color: rgb(242 170 226 / 0.1); }
-  .text-blush-20 { color: rgb(242 170 226 / 0.2); }
-  .text-blush-41 { color: rgb(242 170 226 / 0.41); }
-  .text-blush-50 { color: rgb(242 170 226 / 0.5); }
-  
-  /* Text colors - Lime Cream */
-  .text-lime-cream { color: #DFFFA5; }
-  .text-lime-cream-10 { color: rgb(223 255 165 / 0.1); }
-  .text-lime-cream-20 { color: rgb(223 255 165 / 0.2); }
-  .text-lime-cream-41 { color: rgb(223 255 165 / 0.41); }
-  .text-lime-cream-50 { color: rgb(223 255 165 / 0.5); }
-  
-  /* Text colors - Sky Reflection */
-  .text-sky-reflection { color: #6FB0D0; }
-  .text-sky-reflection-10 { color: rgb(111 176 208 / 0.1); }
-  .text-sky-reflection-20 { color: rgb(111 176 208 / 0.2); }
-  .text-sky-reflection-41 { color: rgb(111 176 208 / 0.41); }
-  .text-sky-reflection-50 { color: rgb(111 176 208 / 0.5); }
-  
-  /* Text colors - Deep Mocha */
-  .text-deep-mocha { color: #403633; }
-  .text-deep-mocha-60 { color: rgb(64 54 51 / 0.6); }
-  .text-deep-mocha-70 { color: rgb(64 54 51 / 0.7); }
-  .text-deep-mocha-100 { color: #403633; }
-  
-  /* Text colors - Tea Green */
-  .text-tea-green { color: #C9FED3; }
-  .text-tea-green-10 { color: rgb(201 254 211 / 0.1); }
-  .text-tea-green-20 { color: rgb(201 254 211 / 0.2); }
-  .text-tea-green-41 { color: rgb(201 254 211 / 0.41); }
-  .text-tea-green-50 { color: rgb(201 254 211 / 0.5); }
-  
-  /* Text colors - Tan */
-  .text-tan { color: #D0B993; }
-  .text-tan-10 { color: rgb(208 185 147 / 0.1); }
-  .text-tan-20 { color: rgb(208 185 147 / 0.2); }
-  .text-tan-41 { color: rgb(208 185 147 / 0.41); }
-  .text-tan-50 { color: rgb(208 185 147 / 0.5); }
-  
-  /* Text colors - Crimson Carrot */
-  .text-crimson-carrot { color: #FA4B02; }
-  .text-crimson-carrot-10 { color: rgb(250 75 2 / 0.1); }
-  .text-crimson-carrot-20 { color: rgb(250 75 2 / 0.2); }
-  .text-crimson-carrot-41 { color: rgb(250 75 2 / 0.41); }
-  .text-crimson-carrot-50 { color: rgb(250 75 2 / 0.5); }
-  .text-primary { color: #6FB0D0; }
-  .text-secondary { color: #FA4B02; }
-  .text-text-primary { color: #403633; }
-  .text-text-secondary { color: rgb(64 54 51 / 0.7); }
-  .text-text-tertiary { color: rgb(64 54 51 / 0.6); }
-  .text-success { color: #00B67A; }
-  .text-error { color: #DC2626; }
-  .text-warning { color: #F59E0B; }
-  
-  /* Border colors - Blush */
-  .border-blush { border-color: #F2AAE2; }
-  .border-blush-10 { border-color: rgb(242 170 226 / 0.1); }
-  .border-blush-20 { border-color: rgb(242 170 226 / 0.2); }
-  .border-blush-41 { border-color: rgb(242 170 226 / 0.41); }
-  .border-blush-50 { border-color: rgb(242 170 226 / 0.5); }
-  
-  /* Border colors - Lime Cream */
-  .border-lime-cream { border-color: #DFFFA5; }
-  .border-lime-cream-10 { border-color: rgb(223 255 165 / 0.1); }
-  .border-lime-cream-20 { border-color: rgb(223 255 165 / 0.2); }
-  .border-lime-cream-41 { border-color: rgb(223 255 165 / 0.41); }
-  .border-lime-cream-50 { border-color: rgb(223 255 165 / 0.5); }
-  
-  /* Border colors - Sky Reflection */
-  .border-sky-reflection { border-color: #6FB0D0; }
-  .border-sky-reflection-10 { border-color: rgb(111 176 208 / 0.1); }
-  .border-sky-reflection-20 { border-color: rgb(111 176 208 / 0.2); }
-  .border-sky-reflection-41 { border-color: rgb(111 176 208 / 0.41); }
-  .border-sky-reflection-50 { border-color: rgb(111 176 208 / 0.5); }
-  
-  /* Border colors - Deep Mocha */
-  .border-deep-mocha { border-color: #403633; }
-  .border-deep-mocha-60 { border-color: rgb(64 54 51 / 0.6); }
-  .border-deep-mocha-70 { border-color: rgb(64 54 51 / 0.7); }
-  .border-deep-mocha-100 { border-color: #403633; }
-  
-  /* Border colors - Tea Green */
-  .border-tea-green { border-color: #C9FED3; }
-  .border-tea-green-10 { border-color: rgb(201 254 211 / 0.1); }
-  .border-tea-green-20 { border-color: rgb(201 254 211 / 0.2); }
-  .border-tea-green-41 { border-color: rgb(201 254 211 / 0.41); }
-  .border-tea-green-50 { border-color: rgb(201 254 211 / 0.5); }
-  
-  /* Border colors - Tan */
-  .border-tan { border-color: #D0B993; }
-  .border-tan-10 { border-color: rgb(208 185 147 / 0.1); }
-  .border-tan-20 { border-color: rgb(208 185 147 / 0.2); }
-  .border-tan-41 { border-color: rgb(208 185 147 / 0.41); }
-  .border-tan-50 { border-color: rgb(208 185 147 / 0.5); }
-  
-  /* Border colors - Crimson Carrot */
-  .border-crimson-carrot { border-color: #FA4B02; }
-  .border-crimson-carrot-10 { border-color: rgb(250 75 2 / 0.1); }
-  .border-crimson-carrot-20 { border-color: rgb(250 75 2 / 0.2); }
-  .border-crimson-carrot-41 { border-color: rgb(250 75 2 / 0.41); }
-  .border-crimson-carrot-50 { border-color: rgb(250 75 2 / 0.5); }
-  .border-primary { border-color: #6FB0D0; }
-  .border-secondary { border-color: #FA4B02; }
-  .border-success { border-color: #00B67A; }
-  .border-error { border-color: #DC2626; }
-  .border-warning { border-color: #F59E0B; }
+@utility text-h1-playfair-desktop {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 500;
 }
+
+@utility text-h2-playfair-mobile {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+@utility text-h2-playfair-desktop {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+@utility text-h3-playfair-mobile {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@utility text-h3-playfair-desktop {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@utility text-h3-playfair-semibold-mobile {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+@utility text-h3-playfair-semibold-desktop {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+@utility text-h4-playfair-mobile {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@utility text-h4-playfair-desktop {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Headings PolySans */
+@utility text-h1-polysans-mobile {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@utility text-h1-polysans-desktop {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+  
+@utility text-h2-polysans-mobile {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+@utility text-h2-polysans-desktop {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+@utility text-h3-polysans-mobile {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+@utility text-h3-polysans-desktop {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+@utility text-h3-polysans-bulky-mobile {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+@utility text-h3-polysans-bulky-desktop {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+@utility text-h4-polysans-mobile {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+@utility text-h4-polysans-desktop {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/* Body text */
+@utility text-body-xl-mobile {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@utility text-body-xl-desktop {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@utility text-body-large-mobile {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@utility text-body-large-desktop {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@utility text-body-standard-mobile {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@utility text-body-standard-desktop {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@utility text-body-small-mobile {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+@utility text-body-small-desktop {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@utility text-caption {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+/* Button text */
+@utility text-button-large-mobile {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+@utility text-button-large-desktop {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+@utility text-button-small-mobile {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+@utility text-button-small-desktop {
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+/* Color utilities - All classes use @utility for responsive breakpoints */
+/* Background colors */
+@utility bg-blush { background-color: #F2AAE2; }
+@utility bg-blush-10 { background-color: rgb(242 170 226 / 0.1); }
+@utility bg-blush-20 { background-color: rgb(242 170 226 / 0.2); }
+@utility bg-blush-41 { background-color: rgb(242 170 226 / 0.41); }
+@utility bg-blush-50 { background-color: rgb(242 170 226 / 0.5); }
+@utility bg-lime-cream { background-color: #DFFFA5; }
+@utility bg-lime-cream-10 { background-color: rgb(223 255 165 / 0.1); }
+@utility bg-lime-cream-20 { background-color: rgb(223 255 165 / 0.2); }
+@utility bg-lime-cream-41 { background-color: rgb(223 255 165 / 0.41); }
+@utility bg-lime-cream-50 { background-color: rgb(223 255 165 / 0.5); }
+@utility bg-sky-reflection { background-color: #6FB0D0; }
+@utility bg-sky-reflection-10 { background-color: rgb(111 176 208 / 0.1); }
+@utility bg-sky-reflection-20 { background-color: rgb(111 176 208 / 0.2); }
+@utility bg-sky-reflection-41 { background-color: rgb(111 176 208 / 0.41); }
+@utility bg-sky-reflection-50 { background-color: rgb(111 176 208 / 0.5); }
+@utility bg-deep-mocha { background-color: #403633; }
+@utility bg-deep-mocha-60 { background-color: rgb(64 54 51 / 0.6); }
+@utility bg-deep-mocha-70 { background-color: rgb(64 54 51 / 0.7); }
+@utility bg-deep-mocha-100 { background-color: #403633; }
+@utility bg-tea-green { background-color: #C9FED3; }
+@utility bg-tea-green-10 { background-color: rgb(201 254 211 / 0.1); }
+@utility bg-tea-green-20 { background-color: rgb(201 254 211 / 0.2); }
+@utility bg-tea-green-41 { background-color: rgb(201 254 211 / 0.41); }
+@utility bg-tea-green-50 { background-color: rgb(201 254 211 / 0.5); }
+@utility bg-tan { background-color: #D0B993; }
+@utility bg-tan-10 { background-color: rgb(208 185 147 / 0.1); }
+@utility bg-tan-20 { background-color: rgb(208 185 147 / 0.2); }
+@utility bg-tan-41 { background-color: rgb(208 185 147 / 0.41); }
+@utility bg-tan-50 { background-color: rgb(208 185 147 / 0.5); }
+@utility bg-crimson-carrot { background-color: #FA4B02; }
+@utility bg-crimson-carrot-10 { background-color: rgb(250 75 2 / 0.1); }
+@utility bg-crimson-carrot-20 { background-color: rgb(250 75 2 / 0.2); }
+@utility bg-crimson-carrot-41 { background-color: rgb(250 75 2 / 0.41); }
+@utility bg-crimson-carrot-50 { background-color: rgb(250 75 2 / 0.5); }
+@utility bg-primary { background-color: #6FB0D0; }
+@utility bg-secondary { background-color: #FA4B02; }
+@utility bg-background { background-color: #F3F0E8; }
+@utility bg-background-light { background-color: #FFFFFF; }
+@utility bg-success { background-color: #00B67A; }
+@utility bg-error { background-color: #DC2626; }
+@utility bg-warning { background-color: #F59E0B; }
+
+/* Text colors */
+@utility text-blush { color: #F2AAE2; }
+@utility text-blush-10 { color: rgb(242 170 226 / 0.1); }
+@utility text-blush-20 { color: rgb(242 170 226 / 0.2); }
+@utility text-blush-41 { color: rgb(242 170 226 / 0.41); }
+@utility text-blush-50 { color: rgb(242 170 226 / 0.5); }
+@utility text-lime-cream { color: #DFFFA5; }
+@utility text-lime-cream-10 { color: rgb(223 255 165 / 0.1); }
+@utility text-lime-cream-20 { color: rgb(223 255 165 / 0.2); }
+@utility text-lime-cream-41 { color: rgb(223 255 165 / 0.41); }
+@utility text-lime-cream-50 { color: rgb(223 255 165 / 0.5); }
+@utility text-sky-reflection { color: #6FB0D0; }
+@utility text-sky-reflection-10 { color: rgb(111 176 208 / 0.1); }
+@utility text-sky-reflection-20 { color: rgb(111 176 208 / 0.2); }
+@utility text-sky-reflection-41 { color: rgb(111 176 208 / 0.41); }
+@utility text-sky-reflection-50 { color: rgb(111 176 208 / 0.5); }
+@utility text-deep-mocha { color: #403633; }
+@utility text-deep-mocha-60 { color: rgb(64 54 51 / 0.6); }
+@utility text-deep-mocha-70 { color: rgb(64 54 51 / 0.7); }
+@utility text-deep-mocha-100 { color: #403633; }
+@utility text-tea-green { color: #C9FED3; }
+@utility text-tea-green-10 { color: rgb(201 254 211 / 0.1); }
+@utility text-tea-green-20 { color: rgb(201 254 211 / 0.2); }
+@utility text-tea-green-41 { color: rgb(201 254 211 / 0.41); }
+@utility text-tea-green-50 { color: rgb(201 254 211 / 0.5); }
+@utility text-tan { color: #D0B993; }
+@utility text-tan-10 { color: rgb(208 185 147 / 0.1); }
+@utility text-tan-20 { color: rgb(208 185 147 / 0.2); }
+@utility text-tan-41 { color: rgb(208 185 147 / 0.41); }
+@utility text-tan-50 { color: rgb(208 185 147 / 0.5); }
+@utility text-crimson-carrot { color: #FA4B02; }
+@utility text-crimson-carrot-10 { color: rgb(250 75 2 / 0.1); }
+@utility text-crimson-carrot-20 { color: rgb(250 75 2 / 0.2); }
+@utility text-crimson-carrot-41 { color: rgb(250 75 2 / 0.41); }
+@utility text-crimson-carrot-50 { color: rgb(250 75 2 / 0.5); }
+@utility text-primary { color: #6FB0D0; }
+@utility text-secondary { color: #FA4B02; }
+@utility text-text-primary { color: #403633; }
+@utility text-text-secondary { color: rgb(64 54 51 / 0.7); }
+@utility text-text-tertiary { color: rgb(64 54 51 / 0.6); }
+@utility text-success { color: #00B67A; }
+@utility text-error { color: #DC2626; }
+@utility text-warning { color: #F59E0B; }
+
+/* Border colors */
+@utility border-blush { border-color: #F2AAE2; }
+@utility border-blush-10 { border-color: rgb(242 170 226 / 0.1); }
+@utility border-blush-20 { border-color: rgb(242 170 226 / 0.2); }
+@utility border-blush-41 { border-color: rgb(242 170 226 / 0.41); }
+@utility border-blush-50 { border-color: rgb(242 170 226 / 0.5); }
+@utility border-lime-cream { border-color: #DFFFA5; }
+@utility border-lime-cream-10 { border-color: rgb(223 255 165 / 0.1); }
+@utility border-lime-cream-20 { border-color: rgb(223 255 165 / 0.2); }
+@utility border-lime-cream-41 { border-color: rgb(223 255 165 / 0.41); }
+@utility border-lime-cream-50 { border-color: rgb(223 255 165 / 0.5); }
+@utility border-sky-reflection { border-color: #6FB0D0; }
+@utility border-sky-reflection-10 { border-color: rgb(111 176 208 / 0.1); }
+@utility border-sky-reflection-20 { border-color: rgb(111 176 208 / 0.2); }
+@utility border-sky-reflection-41 { border-color: rgb(111 176 208 / 0.41); }
+@utility border-sky-reflection-50 { border-color: rgb(111 176 208 / 0.5); }
+@utility border-deep-mocha { border-color: #403633; }
+@utility border-deep-mocha-60 { border-color: rgb(64 54 51 / 0.6); }
+@utility border-deep-mocha-70 { border-color: rgb(64 54 51 / 0.7); }
+@utility border-deep-mocha-100 { border-color: #403633; }
+@utility border-tea-green { border-color: #C9FED3; }
+@utility border-tea-green-10 { border-color: rgb(201 254 211 / 0.1); }
+@utility border-tea-green-20 { border-color: rgb(201 254 211 / 0.2); }
+@utility border-tea-green-41 { border-color: rgb(201 254 211 / 0.41); }
+@utility border-tea-green-50 { border-color: rgb(201 254 211 / 0.5); }
+@utility border-tan { border-color: #D0B993; }
+@utility border-tan-10 { border-color: rgb(208 185 147 / 0.1); }
+@utility border-tan-20 { border-color: rgb(208 185 147 / 0.2); }
+@utility border-tan-41 { border-color: rgb(208 185 147 / 0.41); }
+@utility border-tan-50 { border-color: rgb(208 185 147 / 0.5); }
+@utility border-crimson-carrot { border-color: #FA4B02; }
+@utility border-crimson-carrot-10 { border-color: rgb(250 75 2 / 0.1); }
+@utility border-crimson-carrot-20 { border-color: rgb(250 75 2 / 0.2); }
+@utility border-crimson-carrot-41 { border-color: rgb(250 75 2 / 0.41); }
+@utility border-crimson-carrot-50 { border-color: rgb(250 75 2 / 0.5); }
+@utility border-primary { border-color: #6FB0D0; }
+@utility border-secondary { border-color: #FA4B02; }
+@utility border-success { border-color: #00B67A; }
+@utility border-error { border-color: #DC2626; }
+@utility border-warning { border-color: #F59E0B; }
 
 /* Spacing utilities */
 @layer utilities {

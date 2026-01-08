@@ -43,48 +43,6 @@ module.exports = {
         'heading': ['Playfair Display', 'serif'],
         'body': ['PolySans', 'sans-serif'],
       },
-      fontSize: {
-        // Headings - Playfair
-        'h1-playfair-desktop': ['48px', { lineHeight: '1.2', fontWeight: '500' }],
-        'h1-playfair-mobile': ['32px', { lineHeight: '1.2', fontWeight: '500' }],
-        'h2-playfair-desktop': ['32px', { lineHeight: '1.3', fontWeight: '500' }],
-        'h2-playfair-mobile': ['24px', { lineHeight: '1.3', fontWeight: '500' }],
-        'h3-playfair-desktop': ['24px', { lineHeight: '1.4', fontWeight: '500' }],
-        'h3-playfair-mobile': ['20px', { lineHeight: '1.4', fontWeight: '500' }],
-        'h3-playfair-semibold-desktop': ['24px', { lineHeight: '1.4', fontWeight: '600' }],
-        'h3-playfair-semibold-mobile': ['20px', { lineHeight: '1.4', fontWeight: '600' }],
-        'h4-playfair-desktop': ['18px', { lineHeight: '1.4', fontWeight: '500' }],
-        'h4-playfair-mobile': ['16px', { lineHeight: '1.4', fontWeight: '500' }],
-        
-        // Headings - PolySans
-        'h1-polysans-desktop': ['48px', { lineHeight: '1.2', fontWeight: '700' }],
-        'h1-polysans-mobile': ['32px', { lineHeight: '1.2', fontWeight: '700' }],
-        'h2-polysans-desktop': ['32px', { lineHeight: '1.3', fontWeight: '700' }],
-        'h2-polysans-mobile': ['24px', { lineHeight: '1.3', fontWeight: '700' }],
-        'h3-polysans-desktop': ['24px', { lineHeight: '1.4', fontWeight: '700' }],
-        'h3-polysans-mobile': ['20px', { lineHeight: '1.4', fontWeight: '700' }],
-        'h3-polysans-bulky-desktop': ['24px', { lineHeight: '1.4', fontWeight: '800' }],
-        'h3-polysans-bulky-mobile': ['20px', { lineHeight: '1.4', fontWeight: '800' }],
-        'h4-polysans-desktop': ['18px', { lineHeight: '1.4', fontWeight: '700' }],
-        'h4-polysans-mobile': ['16px', { lineHeight: '1.4', fontWeight: '700' }],
-        
-        // Body text
-        'body-xl-desktop': ['20px', { lineHeight: '1.5' }],
-        'body-xl-mobile': ['18px', { lineHeight: '1.5' }],
-        'body-large-desktop': ['18px', { lineHeight: '1.5' }],
-        'body-large-mobile': ['16px', { lineHeight: '1.5' }],
-        'body-standard-desktop': ['16px', { lineHeight: '1.5' }],
-        'body-standard-mobile': ['14px', { lineHeight: '1.5' }],
-        'body-small-desktop': ['14px', { lineHeight: '1.4' }],
-        'body-small-mobile': ['12px', { lineHeight: '1.4' }],
-        'caption': ['12px', { lineHeight: '1.3' }],
-        
-        // Buttons
-        'button-large-desktop': ['24px', { lineHeight: '1.2', fontWeight: '800' }],
-        'button-large-mobile': ['20px', { lineHeight: '1.2', fontWeight: '800' }],
-        'button-small-desktop': ['15px', { lineHeight: '1.2', fontWeight: '800' }],
-        'button-small-mobile': ['14px', { lineHeight: '1.2', fontWeight: '800' }],
-      },
       spacing: {
         'xs': '4px',
         'sm': '8px',
@@ -127,9 +85,9 @@ module.exports = {
         'slow': '300ms',
       },
       screens: {
-        'mobile': '768px',
-        'tablet': '1024px',
-        'desktop': '1440px',
+        'md': { 'min': '768px' },
+        'lg': { 'min': '1024px' },
+        'xl': { 'min': '1440px' }
       }
     },
   },
