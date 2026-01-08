@@ -1,6 +1,6 @@
 / Hero Section
-%section.bg-lime-cream.md:py-60.py-24
-  .max-w-4xl.mx-auto.px-lg
+%section.bg-lime-cream.md:pt-60.pt-40.relative
+  .max-w-4xl.mx-auto.px-lg.relative.z-20
     .flex.flex-col.items-center.text-center
       / Conteneur titre et sous-titre
       .mb-8
@@ -21,3 +21,7 @@
         Découvrir mamaVillage
         %svg.w-4.h-4.fill-background-light{viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg"}
           %path{d: "M8 0L6.59 1.41L12.17 7H0v2h12.17l-5.58 5.59L8 16l8-8z"}
+  
+  / Image en bas de la section (à droite, remontée avec overlap possible)
+  .flex.justify-end.-mt-10.md:-mt-40.relative.z-10
+    = image_tag "group.png", alt: "Parents connectés dans leur quartier", class: "w-[400px] md:w-[700px] h-auto" 
